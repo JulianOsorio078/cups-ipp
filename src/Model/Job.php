@@ -276,6 +276,7 @@ class Job implements JobInterface
           'name' => $name,
           'mimeType' => $mimeType,
           'filename' => $filename,
+          'binary' => file_get_contents($filename),
         ];
 
         return $this;
